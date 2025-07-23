@@ -3,11 +3,15 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Travel and Tours | Love</title>
+		<title>Travel and Tours | New Year</title>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 		/>
+		<script
+			src="https://kit.fontawesome.com/203f7bcb2a.js"
+			crossorigin="anonymous"
+		></script>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
 			rel="stylesheet"
@@ -22,45 +26,47 @@
 			body {
 				margin: 0;
 				padding: 0;
-				font-family: 'Montserrat', sans-serif;
 				height: 100%;
+				font-family: 'Montserrat', sans-serif;
 			}
 
 			.holiday-body {
-				background: url('https://www.usnews.com/dims4/USNEWS/a4d38ab/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F94%2F44%2Ff7c7db5b43249e5c6021f1fe1104%2Fromantic-getaway-stock.jpg')
+				background: url('https://image.urlaubspiraten.de/1024/image/upload/v1603287132/mediavault_images/twk0mdzlq1q0pvkjk8sj.jpg')
 					no-repeat center center fixed;
 				background-size: cover;
 				position: relative;
+				min-height: 100vh;
 			}
 
 			.holiday-body::before {
 				content: '';
 				position: absolute;
 				inset: 0;
-				background: rgba(39, 11, 29, 0.6);
+				background: rgba(11, 29, 58, 0.75);
 				z-index: -1;
 			}
 
 			/* Navbar */
 			.holiday-nav {
-				background-color: rgba(24, 8, 8, 0.85);
+				background-color: #081730;
 				padding: 25px 0;
+				z-index: 10;
 			}
 
 			.holiday-nav .navbar-nav a {
-				color: #fff;
 				padding: 10px 15px;
 				text-decoration: none;
 			}
 
 			.holiday-nav .navbar-nav a:hover {
-				background-color: rgba(255, 192, 203, 0.3);
+				background-color: rgba(255, 255, 255, 0.23);
+				color: #edf7f6;
 				border-radius: 5px;
 			}
 
 			.holiday-nav .btn-signin {
-				background-color: #ff6f91;
-				color: white;
+				background-color: #fccb06;
+				color: black;
 				border: none;
 				padding: 8px 25px;
 				font-weight: bold;
@@ -69,58 +75,56 @@
 			}
 
 			.holiday-nav .btn-signin:hover {
-				background-color: #d94466;
-				color: white;
+				background-color: #e2b500;
 			}
 
 			.holiday-button:active,
 			.btn-signin:active {
-				background-color: #c4375a;
-				color: white;
+				background-color: #a08800;
 				transform: scale(0.98);
 				box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 			}
 
 			/* Hero */
 			.hero-section {
-				height: 90vh;
+				min-height: 90vh;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
 				text-align: center;
-				position: relative;
-				color: white;
+				color: #edf7f6;
+				padding: 0 15px;
 			}
 
 			.hero-title {
 				font-family: 'Bebas Regular';
-				font-size: 9em;
+				font-size: 8em;
 				font-weight: 600;
 				letter-spacing: 7px;
-				color: white;
+				color: #edf7f6;
 				mask-image: linear-gradient(
 					to bottom,
-					white 50%,
+					#edf7f6 50%,
 					rgba(255, 255, 255, 0) 100%
 				);
 				-webkit-mask-image: linear-gradient(
 					to bottom,
-					white 50%,
+					#edf7f6 50%,
 					rgba(255, 255, 255, 0) 100%
 				);
 			}
 
 			.hero-subtext {
 				font-size: 1.5rem;
-				color: #ffe4e1;
+				color: #edf7f6;
 				margin-top: 1rem;
 				max-width: 1000px;
 			}
 
 			.holiday-button {
-				background-color: #ff6f91;
-				color: white;
+				background-color: #fccb06;
+				color: black;
 				border: none;
 				padding: 12px 35px;
 				font-weight: bold;
@@ -131,7 +135,23 @@
 			}
 
 			.holiday-button:hover {
-				background-color: #d94466;
+				background-color: #e2b500;
+			}
+
+			@media (max-width: 992px) {
+				.hero-title {
+					font-size: 4.5em;
+				}
+				.hero-subtext {
+					font-size: 1.25rem;
+				}
+			}
+
+			@media (max-width: 576px) {
+				.hero-title {
+					font-size: 4em;
+					letter-spacing: 3px;
+				}
 			}
 		</style>
 	</head>
@@ -181,7 +201,7 @@
 						href="#"
 					>
 						<img
-							src="valentines-logo.png"
+							src="new-year-logo.png"
 							width="80"
 							height="80"
 							alt="New Year Logo"
@@ -198,10 +218,10 @@
 
 		<!-- Hero Section -->
 		<section class="hero-section">
-			<h1 class="hero-title">LOVE TO TRAVEL</h1>
+			<h1 class="hero-title">Cheers to New Adventures</h1>
 			<p class="hero-subtext">
-				This Valentine’s season, escape to breathtaking destinations with
-				someone special or treat yourself to a sweet solo getaway.
+				Start your year right with new journeys, bold dreams, and unforgettable
+				destinations. Let’s make 2026 your most adventurous year yet.
 			</p>
 			<button class="holiday-button">Book Now</button>
 		</section>
