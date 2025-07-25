@@ -1,0 +1,521 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HOLIDAY THEME CSS */
+.holiday-body {
+    background: url('https://image.urlaubspiraten.de/1024/image/upload/v1603287132/mediavault_images/twk0mdzlq1q0pvkjk8sj.jpg')
+        no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+
+.holiday-body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(11, 29, 58, 0.75);
+    z-index: -1;
+}
+
+/* Navbar */
+.holiday-nav {
+    background-color: #081730;
+    padding: 25px 0;
+    z-index: 10;
+}
+
+.holiday-nav .navbar-nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.holiday-nav .navbar-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.23);
+    color: #edf7f6;
+    border-radius: 5px;
+}
+
+.holiday-nav .btn-signin {
+    background-color: #fccb06;
+    color: black;
+    border: none;
+    padding: 8px 25px;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.holiday-nav .btn-signin:hover {
+    background-color: #e2b500;
+}
+
+.holiday-button:active,
+.btn-signin:active {
+    background-color: #a08800;
+    transform: scale(0.98);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero */
+.holiday-hero-section {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #edf7f6;
+    padding: 0 15px;
+}
+
+.holiday-hero-title {
+    font-family: 'ARANTA';
+    font-size: 9em;
+    font-weight: 600;
+    letter-spacing: 7px;
+    color: #edf7f6;
+    mask-image: linear-gradient(
+        to bottom,
+        #edf7f6 55%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        #edf7f6 55%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    text-shadow: 0px 0px 15px #081730;
+}
+
+.holiday-hero-subtext {
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 15px #000000;
+    color: #edf7f6;
+    margin-top: 1rem;
+    max-width: 1000px;
+}
+
+.holiday-button {
+    background-color: #fccb06;
+    color: black;
+    border: none;
+    padding: 12px 35px;
+    font-weight: bold;
+    font-size: 1.25em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+.holiday-button:hover {
+    background-color: #e2b500;
+}
+
+@media (max-width: 992px) {
+    .holiday-hero-title {
+        font-size: 4.5em;
+    }
+    .holiday-hero-subtext {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .holiday-hero-title {
+        font-size: 4em;
+        letter-spacing: 3px;
+    }
+}
+
+/* MODERN THEME CSS */
+.modern-body {
+    background: url('https://www.rvcj.com/wp-content/uploads/2023/10/5-Beach-Haus-1140x641.jpeg')
+        no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    z-index: 0;
+}
+
+.modern-body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(70, 66, 64, 0.356);
+    z-index: -1;
+}
+
+.modern-nav {
+    background-color: #3a2d28;
+    padding: 25px 0;
+    z-index: 10;
+}
+
+.modern-nav .navbar-nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #f1ede6;
+}
+
+.modern-nav .navbar-nav a:hover {
+    background-color: #7e6a61;
+    border-radius: 5px;
+}
+
+.modern-nav .btn-signin {
+    background-color: #e2c09b;
+    color: #3a2d28;
+    border: none;
+    padding: 8px 25px;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modern-nav .btn-signin:hover {
+    background-color: #c9ab8b;
+}
+
+.modern-button:active,
+.btn-signin:active {
+    background-color: #cfb191;
+    transform: scale(0.98);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modern-hero-section {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f1ede6;
+    padding: 0 15px;
+}
+
+.modern-hero-title {
+    font-family: 'Bebas Regular';
+    font-size: 9em;
+    font-weight: 600;
+    letter-spacing: 7px;
+    color: #f1ede6;
+    mask-image: linear-gradient(
+        to bottom,
+        #f1ede6 65%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        #f1ede6 65%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    text-shadow: 0px 0px 15px #3a2d28;
+}
+
+.modern-hero-subtext {
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 15px #000000;
+    color: white;
+    margin-top: 1rem;
+    max-width: 1000px;
+}
+
+.modern-button {
+    background-color: #e2c09b;
+    color: #3a2d28;
+    border: none;
+    padding: 12px 35px;
+    font-weight: bold;
+    font-size: 1.25em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+.modern-button:hover {
+    background-color: #c9ab8b;
+}
+
+@media (max-width: 992px) {
+    .modern-hero-title {
+        font-size: 4.5em;
+    }
+    .modern-hero-subtext {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .modern-hero-title {
+        font-size: 4em;
+        letter-spacing: 3px;
+    }
+}
+
+/* OWN THEME */
+.love-body {
+    background: url('https://www.usnews.com/dims4/USNEWS/a4d38ab/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F94%2F44%2Ff7c7db5b43249e5c6021f1fe1104%2Fromantic-getaway-stock.jpg')
+        no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+
+.love-body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(39, 11, 29, 0.6);
+    z-index: -1;
+}
+
+/* Navbar */
+.love-nav {
+    background-color: rgba(24, 8, 8, 0.85);
+    padding: 25px 0;
+    z-index: 10;
+}
+
+.love-nav .navbar-nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.love-nav .navbar-nav a:hover {
+    background-color: rgba(255, 192, 203, 0.3);
+    border-radius: 5px;
+}
+
+.love-nav .btn-signin {
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.love-nav .btn-signin:hover {
+    background-color: #d94466;
+    color: white;
+}
+
+.love-button:active,
+.btn-signin:active {
+    background-color: #c4375a;
+    color: white;
+    transform: scale(0.98);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero */
+.love-hero-section {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 15px;
+}
+
+.love-hero-title {
+    font-family: 'Moriel';
+    font-size: 9em;
+    font-weight: 600;
+    letter-spacing: 7px;
+    color: white;
+    margin-bottom: -15px;
+    mask-image: linear-gradient(
+        to bottom,
+        white 35%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        white 35%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    text-shadow: 0px 0px 15px rgba(24, 8, 8, 0.85);
+}
+
+.love-hero-subtext {
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 15px #000000;
+    color: #ffe4e1;
+    margin-top: 1rem;
+    max-width: 1000px;
+}
+
+.love-button {
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    font-weight: bold;
+    font-size: 1.25em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+.love-button:hover {
+    background-color: #d94466;
+}
+
+@media (max-width: 992px) {
+    .love-hero-title {
+        font-size: 4.5em;
+    }
+    .love-hero-subtext {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .love-hero-title {
+        font-size: 4em;
+        letter-spacing: 3px;
+    }
+}
+
+/* VINTAGE THEME CSS */
+.vintage-body {
+    background-color: #F4F0E5; 
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+.vintage-body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #F4F0E5;
+    z-index: -1;
+}
+
+/* Navbar */
+.vintage-nav {
+    background-color: #1A2224;
+    padding: 25px 0;
+    z-index: 10;
+}
+
+.vintage-nav .navbar-nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #F4F0E5;
+}
+
+.vintage-nav .navbar-nav a:hover {
+    background-color: #3F4E4F;
+    border-radius: 5px;
+}
+
+.vintage-nav .btn-signin {
+    background-color: #645446;
+    color: #F4F0E5;
+    border: none;
+    padding: 8px 25px;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.vintage-nav .btn-signin:hover {
+    background-color: #6A635D;
+}
+
+.vintage-button:active,
+.btn-signin:active {
+    background-color: #6A635D;
+    transform: scale(0.98);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero */
+.vintage-hero-section {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    min-height: 70vh;
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F4F0E5;
+    padding: 100px 15px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.vintage-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('https://www.allianz-assistance.co.uk/travel-insurance/destinations/cuba-travel-insurance/_jcr_content/root/parsys/stage/stageimage.img.82.3360.jpeg/1707313171457/cuba-header.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    filter: grayscale(0.9) contrast(0.8);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.vintage-hero-title {
+    font-family: 'Lobster';
+    font-size: 8em;
+    font-weight: 600;
+    letter-spacing: 7px;
+    color: #332d28;
+    text-shadow: 0px 0px 2px #1A2224;
+}
+
+.vintage-hero-subtext {
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 30px #000000;
+    color: #1A2224;
+    margin-top: 1rem;
+    max-width: 1000px;
+}
+
+.vintage-button {
+    background-color: #645446;
+    color: #F4F0E5;
+    border: none;
+    padding: 12px 35px;
+    font-weight: bold;
+    font-size: 1.25em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+.vintage-button:hover {
+    background-color: #6A635D;
+}
+
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 4.5em;
+    }
+    .hero-subtext {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 3em;
+        letter-spacing: 3px;
+    }
+}

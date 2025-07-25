@@ -20,144 +20,10 @@
 			href="https://db.onlinewebfonts.com/c/786b896a12da43831e968ca69f88900a?family=Moriel"
 			rel="stylesheet"
 		/>
-
-		<style>
-			html,
-			body {
-				margin: 0;
-				padding: 0;
-				height: 100%;
-				font-family: 'Montserrat', sans-serif;
-			}
-
-			.love-body {
-				background: url('https://www.usnews.com/dims4/USNEWS/a4d38ab/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F94%2F44%2Ff7c7db5b43249e5c6021f1fe1104%2Fromantic-getaway-stock.jpg')
-					no-repeat center center fixed;
-				background-size: cover;
-				position: relative;
-				min-height: 100vh;
-			}
-
-			.love-body::before {
-				content: '';
-				position: absolute;
-				inset: 0;
-				background: rgba(39, 11, 29, 0.6);
-				z-index: -1;
-			}
-
-			/* Navbar */
-			.love-nav {
-				background-color: rgba(24, 8, 8, 0.85);
-				padding: 25px 0;
-				z-index: 10;
-			}
-
-			.love-nav .navbar-nav a {
-				padding: 10px 15px;
-				text-decoration: none;
-			}
-
-			.love-nav .navbar-nav a:hover {
-				background-color: rgba(255, 192, 203, 0.3);
-				border-radius: 5px;
-			}
-
-			.love-nav .btn-signin {
-				background-color: #ff6f91;
-				color: white;
-				border: none;
-				padding: 8px 25px;
-				font-weight: bold;
-				font-size: 1em;
-				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-			}
-
-			.love-nav .btn-signin:hover {
-				background-color: #d94466;
-				color: white;
-			}
-
-			.love-button:active,
-			.btn-signin:active {
-				background-color: #c4375a;
-				color: white;
-				transform: scale(0.98);
-				box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-			}
-
-			/* Hero */
-			.hero-section {
-				min-height: 90vh;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				text-align: center;
-				color: white;
-				padding: 0 15px;
-			}
-
-			.hero-title {
-				font-family: 'Moriel';
-				font-size: 9em;
-				font-weight: 600;
-				letter-spacing: 7px;
-				color: white;
-				margin-bottom: -15px;
-				mask-image: linear-gradient(
-					to bottom,
-					white 35%,
-					rgba(255, 255, 255, 0) 100%
-				);
-				-webkit-mask-image: linear-gradient(
-					to bottom,
-					white 35%,
-					rgba(255, 255, 255, 0) 100%
-				);
-				text-shadow: 0px 0px 15px rgba(24, 8, 8, 0.85);
-			}
-
-			.hero-subtext {
-				font-size: 1.5rem;
-				text-shadow: 0px 0px 15px #000000;
-				color: #ffe4e1;
-				margin-top: 1rem;
-				max-width: 1000px;
-			}
-
-			.love-button {
-				background-color: #ff6f91;
-				color: white;
-				border: none;
-				padding: 12px 35px;
-				font-weight: bold;
-				font-size: 1.25em;
-				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-				margin-top: 2rem;
-				border-radius: 8px;
-			}
-
-			.love-button:hover {
-				background-color: #d94466;
-			}
-
-			@media (max-width: 992px) {
-				.hero-title {
-					font-size: 4.5em;
-				}
-				.hero-subtext {
-					font-size: 1.25rem;
-				}
-			}
-
-			@media (max-width: 576px) {
-				.hero-title {
-					font-size: 4em;
-					letter-spacing: 3px;
-				}
-			}
-		</style>
+		<link
+			href="styles.css"
+			rel="stylesheet"
+		/>
 	</head>
 
 	<body class="love-body">
@@ -184,17 +50,13 @@
 				>
 					<ul class="navbar-nav gap-3">
 						<li class="nav-item">
-							<a class="nav-link text-white" href="new-year.html"
-								>Holiday Theme</a
-							>
+							<a class="nav-link text-white" href="new-year.html">Holiday Theme</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link text-white" href="modern.html">Modern Theme</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white" href="vintage.html"
-								>Old Generation Theme</a
-							>
+							<a class="nav-link text-white" href="vintage.html">Old Generation Theme</a>
 						</li>
 					</ul>
 
@@ -206,7 +68,7 @@
 							src="valentines-logo.png"
 							width="80"
 							height="80"
-							alt="New Year Logo"
+							alt="Valentine Logo"
 						/>
 					</a>
 
@@ -223,9 +85,9 @@
 		</nav>
 
 		<!-- Hero Section -->
-		<section class="hero-section">
-			<h1 class="hero-title">LOVE TO TRAVEL</h1>
-			<p class="hero-subtext">
+		<section class="love-hero-section">
+			<h1 class="love-hero-title">LOVE TO TRAVEL</h1>
+			<p class="love-hero-subtext">
 				This Valentine’s season, escape to breathtaking destinations with
 				someone special or treat yourself to a sweet solo getaway.
 			</p>
