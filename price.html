@@ -27,6 +27,7 @@
             .price-card {
                 background-color: rgba(255, 255, 255, 0.5); /* white with 80% opacity */
                 backdrop-filter: blur(10px); /* optional: gives it a frosted glass effect */
+                border-radius: 40px;
             }
 
             .bebas-font {
@@ -36,6 +37,18 @@
             h1 {
                 font-size: 60px;
             }
+
+            .select-button {
+                background-color: #3A2D28;
+                color: #f1ede6;
+                border-radius: 40px;
+            }
+
+            .price-heading {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+                color: white; /* Ensures visibility */
+            }
+
 
         </style>
 
@@ -87,89 +100,90 @@
 			</div>
 		</nav>
 
-        <h1 class="mx-auto text-center mt-4 bebas-font">Choose the perfect <br> package for you trip</h1>
+        <h1 class="mx-auto text-center mt-4 bebas-font price-heading">
+            Choose the perfect <br> package for your trip
+        </h1>
 
-        <div class="container mt-3 d-flex align-items-start justify-content-center flex-wrap gap-2">
+        <div class="container mt-3">
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-start gap-3">
 
-            <div class="border border-1 p-4 border-dark rounded text-center flex-fill price-card" style="max-width: 400px;">
-                <h6 class="text-start bebas-font">Free</h6>
+                <!-- Standard Package -->
+                <div class="border border-1 p-4 border-dark text-center price-card" style="width: 400px;">
+                    <h6 class="text-start bebas-font">Standard</h6>
 
-                <h1 class="text-start bebas-font">$0</h1>
+                    <h1 class="text-center bebas-font" style="font-size: 72px;">₱1299</h1>
 
-                <p class="mb-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ipsum suscipit at nam ratione! Ad, fugiat voluptas maiores delectus assumenda dolore voluptatibus distinctio, aut molestias nulla aliquam enim consequatur! Sed!
-                </p>
+                    <p class="mb-4">
+                        Includes basic accommodations, shared tours, and must-see spots — perfect for travelers on a budget.
+                    </p>
 
-                <button class="btn btn-primary">Select this plan</button>
+                    <button class="btn select-button">Select this plan</button>
 
-                <hr>
+                    <hr>
 
-                <p class="text-start">Free plan includes:</p>
-                <ul class="list-unstyled text-start mb-3">
-                    <li><i class="bi bi-check-lg text-success"></i> Access to basic features</li>
-                    <li><i class="bi bi-check-lg text-success"></i> Limited destinations</li>
-                    <li><i class="bi bi-check-lg text-success"></i> Email support</li>
-                    <li><i class="bi bi-check-lg text-success"></i> Basic travel insurance</li>
-                    <li><i class="bi bi-check-lg text-success"></i> Community forum access</li>
-                    <li><i class="bi bi-check-lg text-success"></i> Weekly travel tips</li>
-                </ul>
+                    <p class="text-start">Package includes:</p>
+                    <ul class="list-unstyled text-start mb-3">
+                        <li><i class="bi bi-check-lg text-success"></i> Essential tour destinations</li>
+                        <li><i class="bi bi-check-lg text-success"></i> Shared accommodations</li>
+                        <li><i class="bi bi-check-lg text-success"></i> Group tour guide access</li>
+                        <li><i class="bi bi-check-lg text-success"></i> Basic travel insurance</li>
+                        <li><i class="bi bi-check-lg text-success"></i> Email and chat support</li>
+                        <li><i class="bi bi-check-lg text-success"></i> Weekly travel tips newsletter</li>
+                    </ul>
+                </div>
+
+                <!-- Deluxe Package -->
+                <div class="border border-1 p-4 border-dark text-center price-card" style="width: 400px;">
+                    <h6 class="text-start bebas-font">Deluxe</h6>
+
+                    <h1 class="text-center bebas-font" style="font-size: 72px;">₱2499</h1>
+
+                    <p class="mb-4">
+                        Upgraded hotels, smoother schedules, and added inclusions — great for those who want a more relaxing experience.
+                    </p>
+
+                    <button class="btn select-button">Select this plan</button>
+
+                    <hr>
+
+                    <p class="text-start">Package includes:</p>
+                    <ul class="list-unstyled text-start mb-3">
+                        <li><i class="bi bi-check-lg text-success"></i> All features from Standard</li>
+                        <li><i class="bi bi-check-lg text-success"></i> Expanded destination choices</li>
+                        <li><i class="bi bi-check-lg text-success"></i> Faster booking assistance</li>
+                        <li><i class="bi bi-check-lg text-success"></i> Semi-custom tour planning</li>
+                        <li><i class="bi bi-check-lg text-success"></i> Access to member-only promos</li>
+                        <li><i class="bi bi-check-lg text-success"></i> Curated monthly travel ideas</li>
+                    </ul>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="border border-1 p-4 border-dark text-center price-card" style="width: 400px;">
+                    <h6 class="text-start bebas-font">Premium</h6>
+
+                    <h1 class="text-center bebas-font" style="font-size: 72px;">₱3499</h1>
+
+                    <p class="mb-4">
+                        Top-tier accommodations, private tours, and full-service planning — designed for travelers who want the best of everything.
+                    </p>
+
+                    <button class="btn select-button">Select this plan</button>
+
+                    <hr>
+
+                    <p class="text-start">Package includes:</p>
+                    <ul class="list-unstyled text-start mb-3">
+                        <li><i class="bi bi-check-lg text-success"></i> All Deluxe features</li>
+                        <li><i class="bi bi-check-lg text-success"></i> Personal travel consultant</li>
+                        <li><i class="bi bi-check-lg text-success"></i> Free travel insurance</li>
+                        <li><i class="bi bi-check-lg text-success"></i> 24/7 VIP support</li>
+                        <li><i class="bi bi-check-lg text-success"></i> Premium destinations</li>
+                        <li><i class="bi bi-check-lg text-success"></i> Lounge access</li>
+                    </ul>
+                </div>
 
             </div>
-
-            <div class="border border-1 p-4 rounded border-dark text-center flex-fill price-card" style="max-width: 400px;">
-                <h6 class="text-start bebas-font">Basic</h6>
-
-                <h1 class="text-start bebas-font">$10</h1>
-
-                <p class="mb-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ipsum suscipit at nam ratione! Ad, fugiat voluptas maiores delectus assumenda dolore voluptatibus distinctio, aut molestias nulla aliquam enim consequatur! Sed!
-                </p>
-
-                <button class="btn btn-primary">Select this plan</button>
-
-                <hr>
-
-                <p class="text-start">Basic plan includes:</p>
-
-                <ul class="list-unstyled text-start mb-3">
-                    <li><i class="bi bi-check-lg text-success"></i> Everything in Free</li>
-                    <li><i class="bi bi-check-lg text-success"></i> Unlimited destinations</li>
-                    <li><i class="bi bi-check-lg text-success"></i> Priority support</li>
-                    <li><i class="bi bi-check-lg text-success"></i> Trip customization tools</li>
-                    <li><i class="bi bi-check-lg text-success"></i> Early access to deals</li>
-                    <li><i class="bi bi-check-lg text-success"></i> Monthly travel newsletter</li>
-                </ul>
-
-            </div>
-
-            <div class="border border-1 p-4 rounded border-dark text-center flex-fill price-card" style="max-width: 400px;">
-                <h6 class="text-start bebas-font">Premium</h6>
-
-                <h1 class="text-start bebas-font">$20</h1>
-
-                <p class="mb-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ipsum suscipit at nam ratione! Ad, fugiat voluptas maiores delectus assumenda dolore voluptatibus distinctio, aut molestias nulla aliquam enim consequatur! Sed!
-                </p>
-
-                <button class="btn btn-primary">Select this plan</button>
-
-                <hr>
-
-                <p class="text-start">Premium plan includes:</p>
-
-                <ul class="list-unstyled text-start mb-3">
-                    <li><i class="bi bi-check-lg text-success"></i> Everything in Basic</li>
-                    <li><i class="bi bi-check-lg text-success"></i> Personal travel consultant</li>
-                    <li><i class="bi bi-check-lg text-success"></i> Free travel insurance</li>
-                    <li><i class="bi bi-check-lg text-success"></i> 24/7 VIP support</li>
-                    <li><i class="bi bi-check-lg text-success"></i> Exclusive premium destinations</li>
-                    <li><i class="bi bi-check-lg text-success"></i> Complimentary airport lounge access</li>
-                </ul>
-
-            </div>
-
         </div>
-
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	</body>
