@@ -76,46 +76,51 @@ html, body {
     color: #3a2d28;
 }
 
+/* Navbar */
 .modern-nav {
-    background-color: #3a2d28;
-    padding: 25px 0;
-    z-index: 10;
+	background-color: #3a2d28;
+	padding: 25px 0;
+	z-index: 10;
 }
 
 .modern-nav .navbar-nav a {
-    padding: 10px 15px;
-    text-decoration: none;
-    color: #f1ede6;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #f1ede6;
 }
 
 .modern-nav .navbar-nav a:hover {
-    background-color: #7e6a61;
-    border-radius: 5px;
+	background-color: #7e6a61;
+	border-radius: 5px;
 }
 
 .modern-nav .btn-signin {
-    background-color: #e2c09b;
-    color: #3a2d28;
-    border: none;
-    padding: 8px 25px;
-    font-weight: bold;
-    font-size: 1em;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	background-color: #e2c09b;
+	color: #3a2d28;
+	border: none;
+	padding: 8px 25px;
+	font-weight: bold;
+	font-size: 1em;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .modern-nav .btn-signin:hover {
+	background-color: #c9ab8b;
+}
+
+#active-signin {
     background-color: #c9ab8b;
 }
 
 .modern-button:active,
 .btn-signin:active {
-    background-color: #cfb191;
-    transform: scale(0.98);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+	background-color: #cfb191;
+	transform: scale(0.98);
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .modern-hero-section {
-    min-height: 90vh;
+    min-height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
