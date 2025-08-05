@@ -418,3 +418,52 @@ body {
 		height: auto;
 	}
 }
+
+/* Price Section */
+.price-card {
+	background-color: #f1ede6;
+	border-radius: 12px;
+	width: 400px;
+	transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+	transform: scale(1.02);
+}
+
+.bebas-font {
+	font-family: 'Bebas Regular';
+}
+
+.select-button {
+	background-color: #3a2d28;
+	color: #f1ede6;
+	border-radius: 12px;
+	font-weight: bold;
+}
+
+.price-heading {
+	font-family: 'Bebas Regular';
+	font-size: 4rem;
+	letter-spacing: 3px;
+	text-shadow: 0 0 10px #3a2d28;
+	color: #f1ede6;
+}
+
+.price {
+	font-size: 72px;
+}
+
+.select-button:hover {
+	background-color: #2c221d;
+	color: #f1ede6;
+}
+
+.package-bgcolor {
+	background-color: #3a2d28;
+	color: #f1ede6;
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
