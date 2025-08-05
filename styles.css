@@ -514,3 +514,55 @@ body {
 	border-radius: 4px;
 	margin-bottom: 10px;
 }
+
+.content-section {
+	padding: 0rem 1rem 2rem;
+	color: #3a2d28;
+}
+
+.content-section h1,
+.content-section h2 {
+	font-family: 'Bebas Regular', sans-serif;
+	font-size: 3rem;
+}
+
+.content-section p {
+	font-size: 1.1rem;
+	color: #333;
+}
+
+.btn-learn {
+	background: linear-gradient(to right, #3a2d28, #6d554b);
+	border: none;
+	color: white;
+	padding: 0.75rem 2rem;
+	border-radius: 50px;
+	font-weight: bold;
+	transition: 0.3s ease;
+}
+
+.btn-learn:hover {
+	opacity: 0.9;
+	transform: scale(1.03);
+	color: white;
+}
+
+.intro-box {
+	background-color: #f1ede6;
+	border-radius: 20px;
+	padding: 2rem;
+	margin-bottom: 2rem;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.offer-card {
+	background-color: #f1ede6;
+	border-radius: 1rem;
+	padding: 1.5rem;
+}
+
+@media (max-width: 767.98px) {
+	.app-image {
+		margin-top: 2rem;
+	}
+}
