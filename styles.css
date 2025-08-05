@@ -224,7 +224,7 @@ body {
 
 /* Login Section */
 .welcome-text {
-	background-image: url('https://as2.ftcdn.net/jpg/10/20/57/51/1000_F_1020575131_QjzGfsJlyOApxcX56RcPp0zVvOoZyRC0.jpg');
+	background-image: url('https://images.unsplash.com/photo-1603034371993-e8ed7c59a472?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -235,10 +235,57 @@ body {
 	justify-content: center;
 	border-radius: 60px;
 	overflow: hidden;
+	text-shadow: 0px 0px 5px #000000;
 }
 
-.container {
-	width: 80%;
+.welcome-text h1 {
+	font-family: 'Bebas Regular';
+	font-size: 4.5rem;
+	letter-spacing: 3px;
+	color: #f1ede6;
+	text-shadow: 0 0 10px #3a2d28;
+	padding-top: 200px;
+}
+
+.welcome-text p {
+	max-width: 80%;
+}
+
+.login-container {
+	max-width: 80%;
+	margin-top: 60px;
+}
+
+.modern-login-container {
+	background-color: #f1ede6;
+	color: #3a2d28;
+}
+
+.modern-login-container .form-label {
+	color: #3a2d28;
+	font-weight: 600;
+}
+
+.modern-login-container .form-control {
+	background-color: rgba(255, 255, 255, 0.555);
+	border: 1px solid #3a2d28;
+}
+
+.modern-login-container .form-control::placeholder {
+	color: #3a2d28;
+}
+
+.modern-login-container button.modern-button {
+	background-color: #3a2d28;
+	color: #f1ede6;
+	width: 100%;
+	font-size: 1.1rem;
+	border-radius: 8px;
+}
+
+.modern-login-container button.modern-button:hover {
+	background-color: #0e0a09;
+	color: #f1ede6;
 }
 
 .forgot-pass {
