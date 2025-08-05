@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Download | Travel and Tours App</title>
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/203f7bcb2a.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://db.onlinewebfonts.com/c/6f6f82d9243d8111301f39648fb1d62b?family=Bebas+Regular"
+			rel="stylesheet"
+		/>
+
+		<style>
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				font-family: 'Montserrat', sans-serif;
+			}
+
+			.modern-body {
+				background: url('https://www.rvcj.com/wp-content/uploads/2023/10/5-Beach-Haus-1140x641.jpeg')
+					no-repeat center center fixed;
+				background-size: cover;
+				position: relative;
+				min-height: 100vh;
+				z-index: 0;
+			}
+
+			.modern-body::before {
+				content: '';
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(70, 66, 64, 0.4);
+				z-index: -1;
+			}
+
+			/* Navbar */
+			.modern-nav {
+				background-color: #3a2d28;
+				padding: 25px 0;
+				z-index: 10;
+			}
+
+			.modern-nav .navbar-nav a {
+				padding: 10px 15px;
+				text-decoration: none;
+				color: #f1ede6;
+			}
+
+			.modern-nav .navbar-nav a:hover {
+				background-color: #7e6a61;
+				border-radius: 5px;
+			}
+
+			.modern-nav .btn-signin {
+				background-color: #e2c09b;
+				color: #3a2d28;
+				border: none;
+				padding: 8px 25px;
+				font-weight: bold;
+				font-size: 1em;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+			}
+
+			.modern-nav .btn-signin:hover {
+				background-color: #c9ab8b;
+			}
+
+			/* Download Section */
+			.download-section {
+				min-height: 90vh;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				padding: 40px 30px;
+				color: #f1ede6;
+			}
+
+			.download-content {
+				max-width: 1200px;
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: space-between;
+				gap: 1em;
+			}
+
+			.download-text {
+				flex: 1 1 600px;
+			}
+
+			.download-text h1 {
+				font-family: 'Bebas Regular';
+				font-size: 4rem;
+				letter-spacing: 3px;
+				text-shadow: 0 0 10px #3a2d28;
+			}
+
+			.download-text p {
+				font-size: 1.25rem;
+				text-shadow: 0px 0px 15px #000000;
+				color: white;
+				margin: 1rem 0 2rem;
+				text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			}
+
+			.download-buttons {
+				margin-bottom: 2rem;
+			}
+
+			.download-buttons a {
+				display: inline-block;
+				margin-right: 15px;
+			}
+
+			.download-buttons img {
+				height: 55px;
+				transition: transform 0.3s ease;
+			}
+
+			.download-buttons img:hover {
+				transform: scale(1.05);
+			}
+
+			.download-mockup {
+				flex: 1 1 400px;
+				display: flex;
+				justify-content: center;
+			}
+
+			.download-mockup img {
+				width: 500px;
+				height: 500px;
+			}
+
+			.stats-section {
+				display: flex;
+				justify-content: center;
+				width: 100%;
+				padding: 1.5em 0.5em;
+				margin-top: -6em;
+			}
+
+			.stats-box {
+				background-color: white;
+				border-radius: 12px;
+				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+				width: 100%;
+				max-width: 1200px;
+			}
+
+			.stats-section h2 {
+				font-family: 'Bebas Regular', sans-serif;
+				font-size: 1.5em;
+				color: #3a2d28;
+				margin-bottom: 0;
+			}
+
+			.stats-section p {
+				color: #555;
+				font-size: 0.9rem;
+				margin: 0;
+			}
+
+			/* Features Section */
+			.inline-features {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1.5rem;
+				justify-content: center;
+				max-width: 1200px;
+				width: 100%;
+			}
+
+			.feature-box {
+				background-color: #ffffff;
+				color: #3a2d28;
+				border-radius: 12px;
+				padding: 1.2em;
+				flex: 1 1 30%;
+				min-width: 230px;
+				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+				text-align: center;
+				transition: transform 0.3s ease;
+			}
+
+			.feature-box:hover {
+				transform: scale(1.05);
+			}
+
+			.icon-circle {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background-color: #e2c09b;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 auto 1rem auto;
+			}
+
+			.icon-circle i {
+				color: #3a2d28;
+				font-size: 1.5rem;
+			}
+
+			.feature-box h5 {
+				font-weight: 700;
+				font-size: 1.1rem;
+				margin-bottom: 0.5rem;
+			}
+
+			.feature-box p {
+				font-size: 0.95rem;
+				line-height: 1.4;
+				color: #5a4a42;
+				margin: 0;
+			}
+
+			@media (max-width: 992px) {
+				.download-section {
+					padding: 30px 20px;
+					overflow-y: auto;
+				}
+
+				.download-content {
+					flex-direction: column;
+					align-items: center;
+				}
+
+				.download-mockup img {
+					width: 350px;
+					height: auto;
+				}
+			}
+		</style>
+	</head>
+
+	<body class="modern-body">
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg modern-nav px-4">
+			<div class="container-fluid">
+				<button
+					class="navbar-toggler text-white border-0"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<i class="fas fa-bars text-white fs-2"></i>
+				</button>
+				<div
+					class="collapse navbar-collapse justify-content-between"
+					id="navbarNav"
+				>
+					<ul class="navbar-nav gap-3">
+						<li class="nav-item">
+							<a class="nav-link text-white" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="content.html"
+								>What We Offer</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="price_Block.html">Pricing</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="contact_inquiry.html"
+								>Contact Us</a
+							>
+						</li>
+					</ul>
+
+					<a
+						class="d-none d-lg-block position-absolute top-50 start-50 translate-middle"
+						href="index.html"
+					>
+						<img
+							src="modern-logo.png"
+							width="80"
+							height="80"
+							alt="Modern Logo"
+						/>
+					</a>
+
+					<div class="d-flex align-items-center gap-3 navbar-nav">
+						<a
+							class="nav-link active text-white border-bottom border-2"
+							href="download.html"
+							>Download App</a
+						>
+						<button class="btn btn-signin">Sign In</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Download Hero Section -->
+		<section class="download-section">
+			<div class="download-content">
+				<div class="download-text">
+					<h1>Explore the World in Your Pocket</h1>
+					<p>
+						Download our mobile app to book trips, get exclusive travel offers,
+						and plan adventures anywhere, anytime. Travel smart, travel in
+						style!
+					</p>
+
+					<div class="download-buttons">
+						<a href="#">
+							<img
+								src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+								alt="App Store"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+								alt="Google Play"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<div class="download-mockup">
+					<img src="download.png" alt="App Mockup" />
+				</div>
+			</div>
+
+			<div class="stats-section">
+				<div class="stats-box px-5 py-2">
+					<div class="row text-center">
+						<div class="col-6 col-md-3">
+							<h2>1,265</h2>
+							<p>Users</p>
+						</div>
+						<div class="col-6 col-md-3">
+							<h2>1,000</h2>
+							<p>Downloads</p>
+						</div>
+						<div class="col-6 col-md-3">
+							<h2>508</h2>
+							<p>Likes</p>
+						</div>
+						<div class="col-6 col-md-3">
+							<h2>809</h2>
+							<p>5 Star Rating</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="inline-features">
+				<div class="feature-box">
+					<div class="icon-circle">
+						<i class="fas fa-plane-departure"></i>
+					</div>
+					<h5>Easy Bookings</h5>
+					<p>
+						Book flights, hotels, and tours with just a few taps—fast, simple,
+						and secure.
+					</p>
+				</div>
+				<div class="feature-box">
+					<div class="icon-circle">
+						<i class="fas fa-map-marked-alt"></i>
+					</div>
+					<h5>Custom Itineraries</h5>
+					<p>
+						Build personalized travel plans tailored to your dream destinations.
+					</p>
+				</div>
+				<div class="feature-box">
+					<div class="icon-circle">
+						<i class="fas fa-tags"></i>
+					</div>
+					<h5>Exclusive Deals</h5>
+					<p>
+						Unlock special discounts and offers available only through the app.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
