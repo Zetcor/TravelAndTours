@@ -20,15 +20,156 @@
 			href="https://db.onlinewebfonts.com/c/6f6f82d9243d8111301f39648fb1d62b?family=Bebas+Regular"
 			rel="stylesheet"
 		/>
-		<link href="styles.css" rel="stylesheet" />
+
+		<style>
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				font-family: 'Montserrat', sans-serif;
+			}
+
+			.modern-body {
+				background: url('https://www.rvcj.com/wp-content/uploads/2023/10/5-Beach-Haus-1140x641.jpeg')
+					no-repeat center center fixed;
+				background-size: cover;
+				position: relative;
+				min-height: 100vh;
+				z-index: 0;
+			}
+
+			.modern-body::before {
+				content: '';
+				position: absolute;
+				inset: 0;
+				background: rgba(70, 66, 64, 0.356);
+				z-index: -1;
+			}
+
+			/* Navbar */
+			.modern-nav {
+				background-color: #3a2d28;
+				padding: 25px 0;
+				z-index: 10;
+			}
+
+			.modern-nav .navbar-nav a {
+				padding: 10px 15px;
+				text-decoration: none;
+				color: #f1ede6;
+			}
+
+			.modern-nav .navbar-nav a:hover {
+				background-color: #7e6a61;
+				border-radius: 5px;
+			}
+
+			.modern-nav .btn-signin {
+				background-color: #e2c09b;
+				color: #3a2d28;
+				border: none;
+				padding: 8px 25px;
+				font-weight: bold;
+				font-size: 1em;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+			}
+
+			.modern-nav .btn-signin:hover {
+				background-color: #c9ab8b;
+			}
+
+			.modern-button:active,
+			.btn-signin:active {
+				background-color: #cfb191;
+				transform: scale(0.98);
+				box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+			}
+
+			/* Hero */
+			.hero-section {
+				min-height: 90vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				color: #f1ede6;
+				padding: 0 15px;
+			}
+
+			.hero-title {
+				font-family: 'Bebas Regular';
+				font-size: 9em;
+				font-weight: 600;
+				letter-spacing: 7px;
+				color: #f1ede6;
+				mask-image: linear-gradient(
+					to bottom,
+					#f1ede6 65%,
+					rgba(255, 255, 255, 0) 100%
+				);
+				-webkit-mask-image: linear-gradient(
+					to bottom,
+					#f1ede6 65%,
+					rgba(255, 255, 255, 0) 100%
+				);
+				text-shadow: 0px 0px 15px #3a2d28;
+			}
+
+			.hero-subtext {
+				font-size: 1.5rem;
+				text-shadow: 0px 0px 15px #000000;
+				color: white;
+				margin-top: 1rem;
+				max-width: 1000px;
+			}
+
+			.modern-button {
+				background-color: #e2c09b;
+				color: #3a2d28;
+				border: none;
+				padding: 12px 35px;
+				font-weight: bold;
+				font-size: 1.25em;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+				margin-top: 2rem;
+				border-radius: 8px;
+			}
+
+			.modern-button:hover {
+				background-color: #c9ab8b;
+			}
+
+			@media (max-width: 992px) {
+				.hero-title {
+					font-size: 4.5em;
+				}
+				.hero-subtext {
+					font-size: 1.25rem;
+				}
+			}
+
+			@media (max-width: 576px) {
+				.hero-title {
+					font-size: 4em;
+					letter-spacing: 3px;
+				}
+			}
+		</style>
 	</head>
 
 	<body class="modern-body">
 		<!-- Navbar -->
 		<nav class="navbar navbar-expand-lg modern-nav px-4">
 			<div class="container-fluid">
-				<a class="navbar-brand d-lg-none text-white" href="#">
-					<img src="modern-logo.png" width="50" height="50" alt="Logo" />
+				<a class="navbar-brand d-lg-none text-white" href="index.html">
+					<img
+						src="https://raw.githubusercontent.com/Zetcor/TravelAndTours/main/modern-logo.png"
+						width="50"
+						height="50"
+						alt="Logo"
+					/>
 				</a>
 				<button
 					class="navbar-toggler text-white border-0"
@@ -47,22 +188,41 @@
 				>
 					<ul class="navbar-nav gap-3">
 						<li class="nav-item">
-							<a class="nav-link text-white" href="index.html">Holiday Theme</a>
+							<a
+								class="nav-link active text-white border-bottom border-2"
+								href="index.html"
+								>Home</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active text-white border-bottom border-2" href="modern.html">Modern Theme</a>
+							<a class="nav-link text-white" href="content.html"
+								>What We Offer</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white" href="vintage.html">Old Generation Theme</a>
+							<a class="nav-link text-white" href="price_Block.html">Pricing</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="contact_inquiry.html"
+								>Contact Us</a
+							>
 						</li>
 					</ul>
 
-					<a class="d-none d-lg-block position-absolute top-50 start-50 translate-middle" href="#">
-						<img src="modern-logo.png" width="80" height="80" alt="Modern Logo" />
+					<a
+						class="d-none d-lg-block position-absolute top-50 start-50 translate-middle"
+						href="index.html"
+					>
+						<img
+							src="https://raw.githubusercontent.com/Zetcor/TravelAndTours/main/modern-logo.png"
+							width="80"
+							height="80"
+							alt="Modern Logo"
+						/>
 					</a>
 
 					<div class="d-flex align-items-center gap-3 navbar-nav">
-						<a class="nav-link text-white" href="valentines.html">Own Theme</a>
+						<a class="nav-link text-white" href="download.html">Download App</a>
 						<button class="btn btn-signin">Sign In</button>
 					</div>
 				</div>
@@ -70,9 +230,9 @@
 		</nav>
 
 		<!-- Hero Section -->
-		<section class="modern-hero-section">
-			<h1 class="modern-hero-title">Explore in Style</h1>
-			<p class="modern-hero-subtext">
+		<section class="hero-section">
+			<h1 class="hero-title">Explore in Style</h1>
+			<p class="hero-subtext">
 				Modern travel made effortless—sleek destinations, curated journeys, and
 				a refreshing escape from the ordinary. Discover what’s next.
 			</p>
