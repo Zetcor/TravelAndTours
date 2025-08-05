@@ -20,109 +20,10 @@
 			href="https://db.onlinewebfonts.com/c/6f6f82d9243d8111301f39648fb1d62b?family=Bebas+Regular"
 			rel="stylesheet"
 		/>
-
 		<link rel="stylesheet" href="styles.css" />
-
-		<style>
-			html,
-			body {
-				margin: 0;
-				padding: 0;
-				height: 100%;
-				font-family: 'Montserrat', sans-serif;
-			}
-
-			.modern-body {
-				background: url('https://www.rvcj.com/wp-content/uploads/2023/10/5-Beach-Haus-1140x641.jpeg')
-					no-repeat center center fixed;
-				background-size: cover;
-				position: relative;
-				min-height: 100vh;
-				z-index: 0;
-			}
-
-			.modern-body::before {
-				content: '';
-				position: absolute;
-				inset: 0;
-				background: rgba(70, 66, 64, 0.356);
-				z-index: -1;
-			}
-
-			/* Index Hero Section */
-			.hero-section {
-				min-height: 85vh;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				text-align: center;
-				color: #f1ede6;
-				padding: 40px;
-			}
-
-			.hero-title {
-				font-family: 'Bebas Regular';
-				font-size: 9em;
-				font-weight: 600;
-				letter-spacing: 7px;
-				color: #f1ede6;
-				mask-image: linear-gradient(
-					to bottom,
-					#f1ede6 65%,
-					rgba(255, 255, 255, 0) 100%
-				);
-				-webkit-mask-image: linear-gradient(
-					to bottom,
-					#f1ede6 65%,
-					rgba(255, 255, 255, 0) 100%
-				);
-				text-shadow: 0px 0px 15px #3a2d28;
-			}
-
-			.hero-subtext {
-				font-size: 1.5rem;
-				text-shadow: 0px 0px 15px #000000;
-				color: white;
-				margin-top: 1rem;
-				max-width: 1000px;
-			}
-
-			.modern-button {
-				background-color: #e2c09b;
-				color: #3a2d28;
-				border: none;
-				padding: 12px 35px;
-				font-weight: bold;
-				font-size: 1.25em;
-				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-				margin-top: 2rem;
-				border-radius: 8px;
-			}
-
-			.modern-button:hover {
-				background-color: #c9ab8b;
-			}
-
-			@media (max-width: 992px) {
-				.hero-title {
-					font-size: 4.5em;
-				}
-				.hero-subtext {
-					font-size: 1.25rem;
-				}
-			}
-
-			@media (max-width: 576px) {
-				.hero-title {
-					font-size: 4em;
-					letter-spacing: 3px;
-				}
-			}
-		</style>
 	</head>
 
-	<body class="modern-body">
+	<body class="index-body">
 		<!-- Navbar -->
 		<nav class="navbar navbar-expand-lg modern-nav px-4">
 			<div class="container-fluid">
@@ -186,16 +87,16 @@
 
 					<div class="d-flex align-items-center gap-3 navbar-nav">
 						<a class="nav-link text-white" href="download.html">Download App</a>
-						<button class="btn btn-signin">Sign In</button>
+						<a href="login.html" class="btn btn-signin">Sign In</a>
 					</div>
 				</div>
 			</div>
 		</nav>
 
 		<!-- Hero Section -->
-		<section class="hero-section">
-			<h1 class="hero-title">Explore in Style</h1>
-			<p class="hero-subtext">
+		<section class="modern-hero-section">
+			<h1 class="modern-hero-title">Explore in Style</h1>
+			<p class="modern-hero-subtext">
 				Modern travel made effortless—sleek destinations, curated journeys, and
 				a refreshing escape from the ordinary. Discover what’s next.
 			</p>
