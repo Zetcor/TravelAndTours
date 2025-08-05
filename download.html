@@ -24,7 +24,7 @@
 			rel="stylesheet"
 		/>
 
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="styles.css" />
 
 		<style>
 			html,
@@ -35,6 +35,7 @@
 				font-family: 'Montserrat', sans-serif;
 			}
 
+			/* MODERN THEME CSS */
 			.modern-body {
 				background: url('https://www.rvcj.com/wp-content/uploads/2023/10/5-Beach-Haus-1140x641.jpeg')
 					no-repeat center center fixed;
@@ -48,10 +49,101 @@
 				content: '';
 				position: absolute;
 				inset: 0;
-				background: rgba(70, 66, 64, 0.356);
+				background: rgba(70, 66, 64, 0.7);
 				z-index: -1;
 			}
-			
+
+			.modern-contact-section p,
+			.modern-contact-section a {
+				font-size: large;
+				color: #3a2d28;
+			}
+
+			.modern-contact-section h2 {
+				color: #3a2d28;
+				font-family: 'Bebas Regular';
+				font-size: 3rem;
+				letter-spacing: 3px;
+			}
+
+			.modern-contact-section a:hover {
+				color: #e2c09b;
+				text-decoration: none;
+			}
+
+			.modern-contact-section .form-label {
+				color: #e2c09b;
+				font-weight: 600;
+			}
+
+			.modern-contact-section .form-control {
+				background-color: rgba(255, 255, 255, 0.1);
+				border: 1px solid #e2c09b;
+				color: #f1ede6;
+			}
+
+			.modern-contact-section .form-control::placeholder {
+				color: #d9c9b3;
+			}
+
+			.modern-contact-section .form-control:focus {
+				background-color: rgba(255, 255, 255, 0.15);
+				border-color: #c9ab8b;
+				color: #f1ede6;
+				box-shadow: none;
+			}
+
+			.modern-contact-section button.modern-button {
+				width: 100%;
+				padding: 12px;
+				font-size: 1.1rem;
+				font-weight: 700;
+				border-radius: 8px;
+			}
+
+			.modern-contact-section button.modern-button:hover {
+				background-color: #c9ab8b;
+				color: #3a2d28;
+			}
+
+			.modern-nav {
+				background-color: #3a2d28;
+				padding: 25px 0;
+				z-index: 10;
+			}
+
+			.modern-nav .navbar-nav a {
+				padding: 10px 15px;
+				text-decoration: none;
+				color: #f1ede6;
+			}
+
+			.modern-nav .navbar-nav a:hover {
+				background-color: #7e6a61;
+				border-radius: 5px;
+			}
+
+			.modern-nav .btn-signin {
+				background-color: #e2c09b;
+				color: #3a2d28;
+				border: none;
+				padding: 8px 25px;
+				font-weight: bold;
+				font-size: 1em;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+			}
+
+			.modern-nav .btn-signin:hover {
+				background-color: #c9ab8b;
+			}
+
+			.modern-button:active,
+			.btn-signin:active {
+				background-color: #cfb191;
+				transform: scale(0.98);
+				box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+			}
+
 			/* Download Section */
 			.download-section {
 				min-height: 85vh;
@@ -59,7 +151,7 @@
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
-				padding: 0px 30px 40px;
+				padding: 30px;
 				color: #f1ede6;
 			}
 
